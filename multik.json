@@ -40,9 +40,9 @@
             "repo": "git@github.com:abricos/abricos-mod-comment.git",
             "version": "dev"
         },
-        "courusel": {
+        "carousel": {
             "group": "module",
-            "repo": "git@github.com:abricos/abricos-mod-courusel.git",
+            "repo": "git@github.com:abricos/abricos-mod-carousel.git",
             "version": "master"
         },
         "eshop": {
