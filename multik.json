@@ -28,7 +28,7 @@
         "bos": {
             "group": "module",
             "repo": "git@github.com:abricos/abricos-mod-bos.git",
-            "version": "dev"
+            "version": "0.1.6-dev"
         },
         "catalog": {
             "group": "module",
