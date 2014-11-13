@@ -1,15 +1,15 @@
+// version 0.2
+
 var path = require('path');
+var fs = require('fs');
 
 var ROOT = process.cwd();
 
-var SITE_NAME = 'abricos';
-
-// var BUILD_DIR = path.join(ROOT, '/build/', SITE_NAME);
 var BUILD_DIR = path.join(ROOT, '/build/');
 
-module.exports = function(grunt) {
+module.exports = function(grunt){
 
-    if (grunt.multik) {
+    if (grunt.multik){
 
         require('./lib/multik.js')(grunt, {
             'buildDir': BUILD_DIR
@@ -17,19 +17,29 @@ module.exports = function(grunt) {
 
     } else {
 
-        grunt.initConfig({
-            abtemplate: {
-                build: {
+        var tplTaskKeys = [], tplTasks = {},
+            tpsDir = path.join(ROOT, 'templates');
+
+        if (grunt.file.isDir(tpsDir)){
+            var dirs = fs.readdirSync(tpsDir);
+            for (var i = 0; i < dirs.length; i++){
+                var dir = dirs[i], key = 'build' + i;
+                tplTaskKeys[tplTaskKeys.length] = 'abtemplate:' + key
+                tplTasks[key] = {
                     options: {
-                        directory: path.join('templates', SITE_NAME),
-                        buildDir: path.join(BUILD_DIR, 'tt', SITE_NAME),
+                        directory: path.join('templates', dir),
+                        buildDir: path.join(BUILD_DIR, 'tt', dir),
                         cleanBuildDir: false
                     }
-                }
-            },
+                };
+            }
+        }
+
+        var tasks = {
             copy: {
                 src: {
-                    files: [{
+                    files: [
+                        {
                             expand: true,
                             cwd: 'src',
                             src: [
@@ -48,10 +58,18 @@ module.exports = function(grunt) {
                 ],
                 tasks: ['build']
             }
-        });
+        };
+
+        if (tplTaskKeys.length > 0){
+            tasks['abtemplate'] = tplTasks;
+        }
+
+        grunt.initConfig(tasks);
 
         grunt.registerTask('init', []);
-        grunt.registerTask('build', ['abtemplate:build', 'copy:src']);
+
+        tplTaskKeys[tplTaskKeys.length] = 'copy:src';
+        grunt.registerTask('build', tplTaskKeys);
     }
 
     grunt.loadNpmTasks('grunt-contrib-copy');
