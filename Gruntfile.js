@@ -57,6 +57,9 @@ module.exports = function(grunt){
                     'templates/**/*'
                 ],
                 tasks: ['build']
+            },
+            clean: {
+                buildinst: path.join(BUILD_DIR, 'includes', 'config.php')
             }
         };
 
@@ -70,10 +73,15 @@ module.exports = function(grunt){
 
         tplTaskKeys[tplTaskKeys.length] = 'copy:src';
         grunt.registerTask('build', tplTaskKeys);
+
+        tplTaskKeys = grunt.util.toArray(tplTaskKeys);
+
+        tplTaskKeys[tplTaskKeys.length] = 'clean:buildinst';
         grunt.registerTask('buildinst', tplTaskKeys);
     }
 
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-abricos');
 
