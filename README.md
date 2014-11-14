@@ -45,7 +45,11 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 ### Setting config.php
 
 ```
-cp ./abricos.src/core/src/includes/config.example.php ./src/config.php
+mkdir ./src/includes
+```
+
+```
+cp ./abricos.src/core/src/includes/config.example.php ./src/includes/config.php
 ```
 
 ```
