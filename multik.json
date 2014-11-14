@@ -4,6 +4,9 @@
         "core": {
             "directory": "abricos.src"
         },
+        "installer": {
+            "directory": "abricos.src"
+        },
         "module": {
             "directory": "abricos.src/modules"
         },
@@ -18,6 +21,11 @@
         "core": {
             "group": "core",
             "repo": "https://github.com/abricos/abricos-core.git",
+            "version": "master"
+        },
+        "install": {
+            "group": "installer",
+            "repo": "https://github.com/abricos/abricos-installer.git",
             "version": "master"
         },
         "abricos.js": {

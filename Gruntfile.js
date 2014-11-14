@@ -1,4 +1,4 @@
-// version 0.2
+// version 0.1.3
 
 var path = require('path');
 var fs = require('fs');
@@ -70,6 +70,7 @@ module.exports = function(grunt){
 
         tplTaskKeys[tplTaskKeys.length] = 'copy:src';
         grunt.registerTask('build', tplTaskKeys);
+        grunt.registerTask('buildinst', tplTaskKeys);
     }
 
     grunt.loadNpmTasks('grunt-contrib-copy');
