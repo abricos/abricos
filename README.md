@@ -6,9 +6,7 @@ Content Management System and Web Application Platform
 
 ### Install Node.js and NPM
 
-```
-[sudo] apt-get install nodejs npm
-```
+[Installing Node.js via package manager](https://github.com/joyent/node/wiki/installing-node.js-via-package-manager)
 
 ### Install Grunt.js
 
