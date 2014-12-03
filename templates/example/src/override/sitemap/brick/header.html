@@ -1,0 +1,91 @@
+<!--[*]
+
+[ph=sys:site_name]Site Name[/ph]
+[ph=sys:site_title]Brief description of your site[/ph]
+[ph=sys:phone][/ph]
+
+[mod=user]usermenubutton[/mod]
+[mod=sitemap]hmenu[/mod]
+[mod=eshop]searchline|extfilter=brand:выбор по производителю[/mod]
+[mod=eshopcart]cartsm[/mod]
+
+[var=ttowner][/var]
+
+[*]-->
+<header>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-top">
+            <div class="container">
+
+                <div class="pull-left">
+                    <ul class="topmenu">
+                        <li>
+                            <a href="/about/" title="О нас">
+                                <i class="fa fa-university"></i> О нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/sitemap/" title="Карта сайта">
+                                <i class="fa fa-sitemap"></i> Карта сайта
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contacts/" title="Контакты">
+                                <i class="fa fa-envelope"></i> Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pull-right">
+                    <ul class="topmenu">
+                        [mod]user:usermenubutton[/mod]
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar logo-section">
+        <div class="container">
+            <div class="navbar-header logo">
+                <a href="/">
+                    <img src="/tt/[var]ttowner[/var]/i/logo.png?v=0.1"
+                         title="[ph]sys:site_name[/ph]"
+                         alt="[ph]sys:site_name[/ph]">
+                </a>
+            </div>
+
+            <div class="navbar-header logo-text">
+                <a href="/" class="navbar-brand">[ph]sys:site_name[/ph]</a>
+
+                <div class="site-desc">
+                    <p>
+                        [ph]sys:site_title[/ph]
+                    </p>
+                </div>
+            </div>
+
+            <div class="clearfix">
+                <div class="callinfo">
+                    <span class="ph">[ph]sys:phone[/ph]</span>
+                </div>
+                <div class="text-right">
+                    [mod]eshopcart:cartsm[/mod]
+                </div>
+                <div class="search-line pull-right">
+                    [mod]eshop:searchline[/mod]
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="mainmenu-section">
+        <div class="container">
+            <div class="menu-horizontal navbar navbar-default" role="navigation">
+                [mod]sitemap:hmenu[/mod]
+            </div>
+
+        </div>
+    </div>
+</header>
