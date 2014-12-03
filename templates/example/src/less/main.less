@@ -1,10 +1,20 @@
+@navbarFixedTopHeight: 30px;
+
 body {
-  padding-top: 30px;
+  padding-top: @navbarFixedTopHeight;
 }
 
 header {
 
   .navbar-fixed-top {
+    background-color: #FFF;
+    border-bottom: 1px solid #dadada;
+    min-height: @navbarFixedTopHeight;
+
+    .pull-left ul.topmenu {
+      padding-left: 15px;
+    }
+
     ul.topmenu {
       list-style: none;
       margin: 0;
@@ -26,6 +36,21 @@ header {
       left: inherit;
       right: 0;
     }
-
   }
+
+  .logo-section {
+    padding-top: 15px;
+
+    .logo-text {
+      padding-left: 15px;
+      .navbar-brand {
+        float: none;
+        display: block;
+      }
+    }
+    .search-line {
+      margin-top: 15px;
+    }
+  }
+
 }

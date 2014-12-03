@@ -40,23 +40,21 @@
     <link href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/tt/[bkvar]ttowner[/bkvar]/css/main.css?v=0.1.0" type="text/css" rel="stylesheet"/>
-
     <script src="/gzip.php?base=/vendor&v=[var]version[/var]&file=jquery/jquery.min.js,bootstrap/js/bootstrap.min.js"></script>
 
     [bkvar]css[/bkvar]
 
     [bkvar]js[/bkvar]
 
-    <link rel="stylesheet" href="/tt/[bkvar]ttowner[/bkvar]/css/override.css?v=0.1.0" type="text/css"/>
+    <link href="/tt/[bkvar]ttowner[/bkvar]/css/main.css?v=0.1.0" type="text/css" rel="stylesheet"/>
 
     [mod]rss:meta[/mod]
 
     [ph]sys:counter[/ph]
 </head>
 <body>
-<header>
 
+<header>
     <div class="navbar navbar-fixed-top">
         <div class="navbar-top">
             <div class="container">
@@ -86,29 +84,12 @@
                         [mod]user:usermenubutton[/mod]
                     </ul>
                 </div>
-
-
-                <div class="row headmenublock">
-                    <div class="col-md-6">
-                        <div class="navbar" role="navigation">
-
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="navbar" role="navigation">
-                            <div class="navbar-collapse collapse">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="navbar scrolldiv">
-
+    <div class="navbar logo-section">
+        <div class="container">
             <div class="navbar-header logo">
                 <a href="/">
                     <img src="/tt/[bkvar]ttowner[/bkvar]/i/logo.png?v=0.1"
@@ -118,18 +99,13 @@
             </div>
 
             <div class="navbar-header logo-text">
-                <div>
-                    <a href="/" class="navbar-brand">
-                        [ph]sys:site_name[/ph]
-                    </a>
-                </div>
+                <a href="/" class="navbar-brand">[ph]sys:site_name[/ph]</a>
 
                 <div class="site-desc">
                     <p>
                         [ph]sys:site_title[/ph]
                     </p>
                 </div>
-
             </div>
 
             <div class="clearfix">
@@ -139,17 +115,19 @@
                 <div class="text-right">
                     [mod]eshopcart:cartsm[/mod]
                 </div>
-
-                <div class="pull-right">
+                <div class="search-line pull-right">
                     [mod]eshop:searchline[/mod]
                 </div>
-
             </div>
 
         </div>
+    </div>
+    <div class="mainmenu-section">
+        <div class="container">
+            <div class="menu-horizontal navbar navbar-default" role="navigation">
+                [mod]sitemap:hmenu[/mod]
+            </div>
 
-        <div class="menu-horizontal navbar navbar-default" role="navigation">
-            [mod]sitemap:hmenu[/mod]
         </div>
     </div>
 </header>
