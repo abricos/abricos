@@ -70,7 +70,7 @@
         },
         "eshopportal": {
             "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-portal.git",
+            "repo": "https://github.com/abricos/abricos-mod-eshopportal.git",
             "version": "master"
         },
         "feedback": {
