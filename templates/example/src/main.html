@@ -1,52 +1,14 @@
 <!--[*]
-[var=meta_title][/var][var=meta_keys][/var][var=meta_desc][/var]
-[ph=sys:meta_title][/ph][ph=sys:meta_keys][/ph][ph=sys:meta_desc][/ph]
 [ph=sys:site_name]Site Name[/ph]
 [ph=sys:site_title]Brief description of your site[/ph]
 
-[ph=sys:phone][/ph]
-[ph=sys:counter][/ph]
-
-[bkvar=ttowner]default[/bkvar]
-[bkvar=js][/bkvar]
-[bkvar=css][/bkvar]
-
-[mod=sys]jsvar[/mod]
-[mod=rss]meta[/mod]
-
-[var=version][/var]
-[var=jsyui][/var]
-
-[mod=sitemap]header,sidebar,breadcrumb[/mod]
+[mod=sitemap]htmlhead,header,sidebar,footer,breadcrumb[/mod]
 
 [*]--><!DOCTYPE html>
 <html lang="ru" class="yui3-loading">
-<head>
-    <title>[var]meta_title[/var]</title>
-    <meta name="keywords" content="[var]meta_keys[/var]">
-    <meta name="description" content="[var]meta_desc[/var]">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    [mod]sys:jsvar[/mod]
-
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <script src="/gzip.php?base=/vendor&v=[var]version[/var]&file=jquery/jquery.min.js,bootstrap/js/bootstrap.min.js"></script>
-
-    [bkvar]css[/bkvar]
-
-    [bkvar]js[/bkvar]
-
-    <link href="/tt/[bkvar]ttowner[/bkvar]/css/main.css?v=0.1.0" type="text/css" rel="stylesheet"/>
-
-    [mod]rss:meta[/mod]
-
-    [ph]sys:counter[/ph]
-</head>
 <body>
 
+[mod]sitemap:htmlhead[/mod]
 [mod]sitemap:header[/mod]
 
 <div id="doc">
@@ -63,40 +25,9 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-            <hr>
-            <div class="well">
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6">
-                        <h4>О нас</h4>
-                        <ul>
-                            <li><a href="/contacts/">Контакты</a></li>
-                            <li><a href="/about/">О нас</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <p>
-                            © <a href="/" title="[ph]sys:site_name[/ph]">[ph]sys:site_name[/ph]</a> - все
-                            права
-                            защищены
-                        </p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="powered">
-                            Powered by <a href="http://abricos.org"
-                                          title="Abricos - Content Management System (CMS), Web Application Platform (WebOS)">Abricos</a>
-                            [var]version[/var]
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 </div>
+
+[mod]sitemap:footer[/mod]
+
 </body>
 </html>

@@ -33,6 +33,11 @@
             "repo": "https://github.com/abricos/abricos.js.git",
             "version": "master"
         },
+        "eshoptp": {
+            "group": "template",
+            "repo": "https://github.com/abricos/abricos-tt-eshoptp.git",
+            "version": "master"
+        },
         "bos": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-bos.git",
@@ -61,6 +66,11 @@
         "eshopcart": {
             "group": "module",
             "repo": "https://github.com/abricos/abricos-mod-eshopcart.git",
+            "version": "master"
+        },
+        "eshopportal": {
+            "group": "module",
+            "repo": "https://github.com/abricos/abricos-mod-portal.git",
             "version": "master"
         },
         "feedback": {

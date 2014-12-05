@@ -1,0 +1,43 @@
+<!--[*]
+
+[var=meta_title][/var][var=meta_keys][/var][var=meta_desc][/var]
+[ph=sys:meta_title][/ph][ph=sys:meta_keys][/ph][ph=sys:meta_desc][/ph]
+
+[ph=sys:phone][/ph]
+[ph=sys:counter][/ph]
+
+[mod=sys]jsvar[/mod]
+[mod=rss]meta[/mod]
+
+[var=ttowner]default[/var]
+[var=version][/var]
+[var=jsyui][/var]
+[bkvar=js][/bkvar]
+[bkvar=css][/bkvar]
+
+
+[*]-->
+<head>
+    <title>[var]meta_title[/var]</title>
+    <meta name="keywords" content="[var]meta_keys[/var]">
+    <meta name="description" content="[var]meta_desc[/var]">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    [mod]sys:jsvar[/mod]
+
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="/gzip.php?base=/vendor&v=[var]version[/var]&file=jquery/jquery.min.js,bootstrap/js/bootstrap.min.js"></script>
+
+    [bkvar]css[/bkvar]
+
+    [bkvar]js[/bkvar]
+
+    <link href="/tt/[var]ttowner[/var]/css/main.css?v=0.1.0" type="text/css" rel="stylesheet"/>
+
+    [mod]rss:meta[/mod]
+
+    [ph]sys:counter[/ph]
+</head>
