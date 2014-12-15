@@ -20,6 +20,8 @@ Content Management System and Web Application Platform
 [sudo] npm install -g multik
 ```
 
+All subsequent commands must be performed in the project folder (where the file is located multik.json).
+
 ### Install other development packages
 
 ```

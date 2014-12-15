@@ -2,24 +2,26 @@
 
 [mod=sitemap]htmlhead,header,sidebar,footer,breadcrumb[/mod]
 
+[mod=eshop]catalog_list[/mod]
+
+
 [*]--><!DOCTYPE html>
 <html lang="ru" class="yui3-loading">
+
 [mod]sitemap:htmlhead[/mod]
+
 <body>
 
 [mod]sitemap:header[/mod]
 
 <div id="doc">
     <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                [mod]sitemap:breadcrumb[/mod]
-                [tt]content[/tt]
-            </div>
-            <div class="col-md-3">
-                [mod]sitemap:sidebar[/mod]
-            </div>
+
+        <div class="mod-eshop">
+            [mod]eshop:catalog_list[/mod]
         </div>
+
+        [tt]content[/tt]
     </div>
 </div>
 
