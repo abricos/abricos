@@ -1,137 +1,82 @@
 {
-    "directory": "abricos.src",
-    "groups": {
-        "core": {
-            "directory": "abricos.src"
-        },
-        "installer": {
-            "directory": "abricos.src"
-        },
-        "module": {
-            "directory": "abricos.src/modules"
-        },
-        "template": {
-            "directory": "abricos.src/templates"
-        },
-        "vendor": {
-            "directory": "abricos.src/vendor"
-        }
+  "dependencies": {
+    "core": {
+      "group": "core",
+      "repo": "https://github.com/abricos/abricos-core.git",
+      "version": "master"
     },
-    "dependencies": {
-        "core": {
-            "group": "core",
-            "repo": "https://github.com/abricos/abricos-core.git",
-            "version": "master"
-        },
-        "install": {
-            "group": "installer",
-            "repo": "https://github.com/abricos/abricos-installer.git",
-            "version": "master"
-        },
-        "abricos.js": {
-            "group": "vendor",
-            "repo": "https://github.com/abricos/abricos.js.git",
-            "version": "master"
-        },
-        "eshoptp": {
-            "group": "template",
-            "repo": "https://github.com/abricos/abricos-tpl-eshoptp.git",
-            "version": "master"
-        },
-        "bos": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-bos.git",
-            "version": "master"
-        },
-        "catalog": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-catalog.git",
-            "version": "master"
-        },
-        "comment": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-comment.git",
-            "version": "master"
-        },
-        "carousel": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-carousel.git",
-            "version": "master"
-        },
-        "eshop": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-eshop.git",
-            "version": "master"
-        },
-        "eshopcart": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-eshopcart.git",
-            "version": "master"
-        },
-        "eshopportal": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-eshopportal.git",
-            "version": "master"
-        },
-        "feedback": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-feedback.git",
-            "version": "master"
-        },
-        "filemanager": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-filemanager.git",
-            "version": "master"
-        },
-        "news": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-news.git",
-            "version": "master"
-        },
-        "notify": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-notify.git",
-            "version": "master"
-        },
-        "rss": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-rss.git",
-            "version": "master"
-        },
-        "sitemap": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-sitemap.git",
-            "version": "master"
-        },
-        "support": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-support.git",
-            "version": "master"
-        },
-        "tester": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-tester.git",
-            "version": "master"
-        },
-        "tinymce": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-tinymce.git",
-            "version": "master"
-        },
-        "uprofile": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-uprofile.git",
-            "version": "master"
-        },
-        "user": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-user.git",
-            "version": "master"
-        },
-        "widget": {
-            "group": "module",
-            "repo": "https://github.com/abricos/abricos-mod-widget.git",
-            "version": "master"
-        }
+    "install": {
+      "group": "installer",
+      "repo": "https://github.com/abricos/abricos-installer.git",
+      "version": "master"
+    },
+    "abricos.js": {
+      "group": "vendor",
+      "repo": "https://github.com/abricos/abricos.js.git",
+      "version": "master"
+    },
+    "bos": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-bos.git",
+      "version": "master"
+    },
+    "example": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-example.git",
+      "version": "master"
+    },
+    "filemanager": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-filemanager.git",
+      "version": "master"
+    },
+    "notify": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-notify.git",
+      "version": "master"
+    },
+    "sitemap": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-sitemap.git",
+      "version": "master"
+    },
+    "tinymce": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-tinymce.git",
+      "version": "master"
+    },
+    "uprofile": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-uprofile.git",
+      "version": "master"
+    },
+    "user": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-user.git",
+      "version": "master"
+    },
+    "widget": {
+      "group": "module",
+      "repo": "https://github.com/abricos/abricos-mod-widget.git",
+      "version": "master"
     }
+  },
+  "directory": "abricos.src",
+  "groups": {
+    "core": {
+      "directory": "abricos.src"
+    },
+    "installer": {
+      "directory": "abricos.src"
+    },
+    "module": {
+      "directory": "abricos.src/modules"
+    },
+    "template": {
+      "directory": "abricos.src/templates"
+    },
+    "vendor": {
+      "directory": "abricos.src/vendor"
+    }
+  }
 }
