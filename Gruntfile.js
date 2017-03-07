@@ -82,11 +82,13 @@ module.exports = function(grunt){
 
         tplTaskKeys[tplTaskKeys.length] = 'clean:buildinst';
         grunt.registerTask('buildinst', tplTaskKeys);
+
+        grunt.registerTask('apidoc', []);
     }
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-abricos');
-
+    grunt.loadNpmTasks('grunt-apidoc');
 };

@@ -7,4 +7,6 @@
 /bower_components
 /abricos.src
 /logs
+/docs
 config.php
+abricos.json
