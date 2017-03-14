@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpdocumentor>
     <parser>
-        <default-package-name>AbricosTest</default-package-name>
+        <default-package-name>Abricos</default-package-name>
         <target>docs/php</target>
         <extensions>
             <extension>php</extension>
         </extensions>
+        <markers>
+            <item>TODO</item>
+        </markers>
     </parser>
     <transformer>
         <target>docs/php</target>
@@ -16,8 +19,8 @@
     <logging>
         <level>warn</level>
         <paths>
-            <default>./logs/phpdocumentor.log</default>
-            <errors>./logs/phpdocumentor.errors.log</errors>
+            <default>{APP_ROOT}/logs/phpdoc-{DATE}.log</default>
+            <errors>{APP_ROOT}/logs/phpdoc-DATE}.errors.log</errors>
         </paths>
     </logging>
     <files>
