@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdocumentor>
+    <parser>
+        <default-package-name>AbricosTest</default-package-name>
+        <target>docs/php</target>
+        <extensions>
+            <extension>php</extension>
+        </extensions>
+    </parser>
+    <transformer>
+        <target>docs/php</target>
+    </transformer>
+    <transformations>
+        <template name="clean" />
+    </transformations>
+    <logging>
+        <level>warn</level>
+        <paths>
+            <default>./logs/phpdocumentor.log</default>
+            <errors>./logs/phpdocumentor.errors.log</errors>
+        </paths>
+    </logging>
+    <files>
+        <directory>./abricos.src</directory>
+        <ignore>./abricos.src/install</ignore>
+        <ignore>./abricos.src/vendor</ignore>
+        <ignore>./abricos.src/templates</ignore>
+        <ignore>*node_modules*</ignore>
+        <ignore>*bower_components*</ignore>
+    </files>
+</phpdocumentor>
