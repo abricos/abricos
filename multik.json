@@ -3,7 +3,7 @@
     "core": {
       "group": "core",
       "repo": "https://github.com/abricos/abricos-core.git",
-      "version": "master"
+      "version": "api"
     },
     "install": {
       "group": "installer",
@@ -33,7 +33,7 @@
     "notify": {
       "group": "module",
       "repo": "https://github.com/abricos/abricos-mod-notify.git",
-      "version": "master"
+      "version": "api"
     },
     "sitemap": {
       "group": "module",
@@ -53,7 +53,7 @@
     "user": {
       "group": "module",
       "repo": "https://github.com/abricos/abricos-mod-user.git",
-      "version": "master"
+      "version": "api"
     },
     "widget": {
       "group": "module",
